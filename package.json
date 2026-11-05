@@ -1,0 +1,21 @@
+{
+  "name": "marta",
+  "version": "3.3.3",
+  "description": "Cypress project",
+  "keywords": [
+    "junior"
+  ],
+  "license": "ISC",
+  "author": "Marta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:chrome": "cypress run",
+    "test:day": "cypress run --spec"
+  },
+  "dependencies": {
+    "cypress": "^16.2.0"
+  }
+}
