@@ -1,0 +1,20 @@
+on:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v7
+        with:
+          browser: chrome
+
+      - name: Uplode HTML report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: cypress-report
+          path: cypress/report/html
