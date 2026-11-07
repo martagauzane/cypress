@@ -1,4 +1,8 @@
+name: Cypress tests
+
 on:
+  push:
+  workfow_dispatch:
 
 jobs:
   cypress-run:
