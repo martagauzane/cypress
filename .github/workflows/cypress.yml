@@ -2,7 +2,7 @@ name: Cypress tests
 
 on:
   push:
-  workfow_dispatch:
+  workflow_dispatch:
 
 jobs:
   cypress-run:
@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: cypress-report
-          path: cypress/report/html
+          path: cypress/report/htmlw?
